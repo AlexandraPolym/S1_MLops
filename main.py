@@ -7,6 +7,7 @@ from data import CorruptMnist
 from model import MyAwesomeModel
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 class TrainOREvaluate(object):
     """ Helper class that will help launch class methods as commands
