@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100% [........................................................................] 31400767 / 31400767
+Traceback (most recent call last):
+  File "/home/melina/Desktop/MLops/S1_MLops/main.py", line 30, in <module>
+    train_set = CorruptMnist(train=True)
+  File "/home/melina/Desktop/MLops/S1_MLops/data.py", line 21, in __init__
+    wandb.log({"train_images" : [wandb.Image(im) for im in data]})
+NameError: name 'wandb' is not defined

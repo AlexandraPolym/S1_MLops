@@ -1,0 +1,164 @@
+2023-01-11 10:57:23,965 INFO    StreamThr :35297 [internal.py:wandb_internal():87] W&B internal server running at pid: 35297, started at: 2023-01-11 10:57:23.964594
+2023-01-11 10:57:23,979 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: status
+2023-01-11 10:57:23,980 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: status
+2023-01-11 10:57:23,992 DEBUG   SenderThread:35297 [sender.py:send():303] send: header
+2023-01-11 10:57:23,995 INFO    WriterThread:35297 [datastore.py:open_for_write():75] open: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/run-33blvrzo.wandb
+2023-01-11 10:57:24,013 DEBUG   SenderThread:35297 [sender.py:send():303] send: run
+2023-01-11 10:57:24,614 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: check_version
+2023-01-11 10:57:24,622 INFO    SenderThread:35297 [dir_watcher.py:__init__():216] watching files in: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files
+2023-01-11 10:57:24,622 INFO    SenderThread:35297 [sender.py:_start_run_threads():928] run started: 33blvrzo with start time 1673431043.961483
+2023-01-11 10:57:24,622 DEBUG   SenderThread:35297 [sender.py:send():303] send: summary
+2023-01-11 10:57:24,623 INFO    SenderThread:35297 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 10:57:24,623 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: check_version
+2023-01-11 10:57:24,785 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: run_start
+2023-01-11 10:57:24,786 DEBUG   HandlerThread:35297 [system_info.py:__init__():31] System info init
+2023-01-11 10:57:24,786 DEBUG   HandlerThread:35297 [system_info.py:__init__():46] System info init done
+2023-01-11 10:57:24,787 INFO    HandlerThread:35297 [system_monitor.py:start():150] Starting system monitor
+2023-01-11 10:57:24,787 INFO    SystemMonitor:35297 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-11 10:57:24,787 INFO    HandlerThread:35297 [system_monitor.py:probe():171] Collecting system info
+2023-01-11 10:57:24,787 INFO    SystemMonitor:35297 [interfaces.py:start():168] Started cpu
+2023-01-11 10:57:24,788 INFO    SystemMonitor:35297 [interfaces.py:start():168] Started disk
+2023-01-11 10:57:24,788 INFO    SystemMonitor:35297 [interfaces.py:start():168] Started memory
+2023-01-11 10:57:24,789 INFO    SystemMonitor:35297 [interfaces.py:start():168] Started network
+2023-01-11 10:57:24,816 DEBUG   HandlerThread:35297 [system_info.py:probe():195] Probing system
+2023-01-11 10:57:24,818 DEBUG   HandlerThread:35297 [system_info.py:_probe_git():180] Probing git
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_info.py:_probe_git():188] Probing git done
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_info.py:probe():241] Probing system done
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-57-generic-x86_64-with-glibc2.31', 'python': '3.10.8', 'heartbeatAt': '2023-01-11T09:57:24.816695', 'startedAt': '2023-01-11T09:57:23.924635', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/melina/Desktop/MLops/S1_MLops/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/AlexandraPolym/S1_MLops.git', 'commit': '5c5e50779d0bab5cded38a982b5ca5d26993480a'}, 'email': 's212558@student.dtu.dk', 'root': '/home/melina/Desktop/MLops/S1_MLops', 'host': 'melina-UX310UA', 'username': 'melina', 'executable': '/home/melina/miniconda3/envs/s1_mlops_env/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2479.15125, 'min': 400.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 400.0, 'max': 3100.0}, {'current': 2116.605, 'min': 400.0, 'max': 3100.0}, {'current': 827.269, 'min': 400.0, 'max': 3100.0}, {'current': 711.304, 'min': 400.0, 'max': 3100.0}], 'disk': {'total': 56.58684158325195, 'used': 52.21615219116211}, 'memory': {'total': 7.630748748779297}}
+2023-01-11 10:57:24,831 INFO    HandlerThread:35297 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-11 10:57:24,831 INFO    HandlerThread:35297 [system_monitor.py:probe():184] Publishing system info
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-11 10:57:24,831 DEBUG   HandlerThread:35297 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-11 10:57:25,631 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/conda-environment.yaml
+2023-01-11 10:57:25,633 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/requirements.txt
+2023-01-11 10:57:25,634 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-summary.json
+2023-01-11 10:57:28,285 DEBUG   HandlerThread:35297 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-11 10:57:28,286 INFO    HandlerThread:35297 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-11 10:57:28,356 DEBUG   SenderThread:35297 [sender.py:send():303] send: files
+2023-01-11 10:57:28,356 INFO    SenderThread:35297 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-11 10:57:28,362 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-11 10:57:28,363 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: stop_status
+2023-01-11 10:57:28,625 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/conda-environment.yaml
+2023-01-11 10:57:28,625 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-metadata.json
+2023-01-11 10:57:28,717 DEBUG   SenderThread:35297 [sender.py:send():303] send: telemetry
+2023-01-11 10:57:28,728 DEBUG   SenderThread:35297 [sender.py:send():303] send: exit
+2023-01-11 10:57:28,729 INFO    SenderThread:35297 [sender.py:send_exit():442] handling exit code: 1
+2023-01-11 10:57:28,729 INFO    SenderThread:35297 [sender.py:send_exit():444] handling runtime: 3
+2023-01-11 10:57:28,734 INFO    SenderThread:35297 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 10:57:28,734 INFO    SenderThread:35297 [sender.py:send_exit():450] send defer
+2023-01-11 10:57:28,735 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,735 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-11 10:57:28,736 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,736 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-11 10:57:28,736 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 1
+2023-01-11 10:57:28,737 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,737 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-11 10:57:28,737 INFO    HandlerThread:35297 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-11 10:57:28,738 DEBUG   SystemMonitor:35297 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-11 10:57:28,739 DEBUG   SystemMonitor:35297 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-11 10:57:28,739 DEBUG   SystemMonitor:35297 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-11 10:57:28,741 INFO    HandlerThread:35297 [interfaces.py:finish():175] Joined cpu
+2023-01-11 10:57:28,741 INFO    HandlerThread:35297 [interfaces.py:finish():175] Joined disk
+2023-01-11 10:57:28,741 INFO    HandlerThread:35297 [interfaces.py:finish():175] Joined memory
+2023-01-11 10:57:28,741 INFO    HandlerThread:35297 [interfaces.py:finish():175] Joined network
+2023-01-11 10:57:28,742 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,742 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-11 10:57:28,742 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 2
+2023-01-11 10:57:28,743 DEBUG   SenderThread:35297 [sender.py:send():303] send: stats
+2023-01-11 10:57:28,744 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,745 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-11 10:57:28,745 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,745 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-11 10:57:28,745 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 3
+2023-01-11 10:57:28,746 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,746 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-11 10:57:28,747 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,747 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-11 10:57:28,747 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 4
+2023-01-11 10:57:28,748 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,748 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-11 10:57:28,749 DEBUG   SenderThread:35297 [sender.py:send():303] send: summary
+2023-01-11 10:57:28,750 INFO    SenderThread:35297 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 10:57:28,750 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,750 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-11 10:57:28,750 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 5
+2023-01-11 10:57:28,751 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:28,751 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-11 10:57:28,752 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:28,752 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-11 10:57:29,124 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 6
+2023-01-11 10:57:29,125 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:29,125 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-11 10:57:29,126 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:29,126 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-11 10:57:29,455 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-11 10:57:29,626 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-summary.json
+2023-01-11 10:57:29,627 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/config.yaml
+2023-01-11 10:57:29,627 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/output.log
+2023-01-11 10:57:30,734 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 7
+2023-01-11 10:57:30,734 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: poll_exit
+2023-01-11 10:57:30,735 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:30,736 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-11 10:57:30,737 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:30,737 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-11 10:57:30,737 INFO    SenderThread:35297 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-11 10:57:31,628 INFO    Thread-13 :35297 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/output.log
+2023-01-11 10:57:31,629 INFO    SenderThread:35297 [dir_watcher.py:finish():392] scan: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files
+2023-01-11 10:57:31,630 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-summary.json wandb-summary.json
+2023-01-11 10:57:31,630 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-metadata.json wandb-metadata.json
+2023-01-11 10:57:31,630 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/requirements.txt requirements.txt
+2023-01-11 10:57:31,631 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/output.log output.log
+2023-01-11 10:57:31,645 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/conda-environment.yaml conda-environment.yaml
+2023-01-11 10:57:31,655 INFO    SenderThread:35297 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/config.yaml config.yaml
+2023-01-11 10:57:31,656 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 8
+2023-01-11 10:57:31,672 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:31,672 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-11 10:57:31,673 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:31,674 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-11 10:57:31,674 INFO    SenderThread:35297 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-11 10:57:31,758 INFO    Thread-16 :35297 [upload_job.py:push():143] Uploaded file /tmp/tmp87yoi22bwandb/1mn94ypy-wandb-metadata.json
+2023-01-11 10:57:32,505 INFO    Thread-19 :35297 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/output.log
+2023-01-11 10:57:32,508 INFO    Thread-17 :35297 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/wandb-summary.json
+2023-01-11 10:57:32,510 INFO    Thread-20 :35297 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/conda-environment.yaml
+2023-01-11 10:57:32,514 INFO    Thread-21 :35297 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/config.yaml
+2023-01-11 10:57:32,516 INFO    Thread-18 :35297 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/files/requirements.txt
+2023-01-11 10:57:32,722 INFO    Thread-12 (_thread_body):35297 [sender.py:transition_state():463] send defer: 9
+2023-01-11 10:57:32,723 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:32,723 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-11 10:57:32,724 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:32,724 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-11 10:57:32,724 INFO    SenderThread:35297 [file_pusher.py:join():173] waiting for file pusher
+2023-01-11 10:57:32,724 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 10
+2023-01-11 10:57:32,725 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:32,725 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-11 10:57:32,726 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:32,726 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-11 10:57:33,111 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 11
+2023-01-11 10:57:33,112 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:33,112 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-11 10:57:33,112 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:33,113 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-11 10:57:33,113 INFO    SenderThread:35297 [sender.py:transition_state():463] send defer: 12
+2023-01-11 10:57:33,115 DEBUG   SenderThread:35297 [sender.py:send():303] send: final
+2023-01-11 10:57:33,115 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 10:57:33,116 DEBUG   SenderThread:35297 [sender.py:send():303] send: footer
+2023-01-11 10:57:33,116 INFO    HandlerThread:35297 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-11 10:57:33,117 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: defer
+2023-01-11 10:57:33,117 INFO    SenderThread:35297 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-11 10:57:33,119 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-11 10:57:33,120 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: poll_exit
+2023-01-11 10:57:33,123 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: server_info
+2023-01-11 10:57:33,124 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-11 10:57:33,125 DEBUG   SenderThread:35297 [sender.py:send_request():317] send_request: server_info
+2023-01-11 10:57:33,131 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-11 10:57:33,728 INFO    MainThread:35297 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-11 10:57:33,729 INFO    MainThread:35297 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-11 10:57:33,729 INFO    MainThread:35297 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-11 10:57:33,730 DEBUG   HandlerThread:35297 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-11 10:57:33,730 INFO    HandlerThread:35297 [handler.py:finish():814] shutting down handler
+2023-01-11 10:57:34,115 INFO    WriterThread:35297 [datastore.py:close():279] close: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230111_105723-33blvrzo/run-33blvrzo.wandb
+2023-01-11 10:57:34,728 INFO    SenderThread:35297 [sender.py:finish():1331] shutting down sender
+2023-01-11 10:57:34,728 INFO    SenderThread:35297 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-11 10:57:34,728 INFO    SenderThread:35297 [file_pusher.py:join():173] waiting for file pusher
+2023-01-11 10:57:34,734 INFO    MainThread:35297 [internal.py:handle_exit():77] Internal process exited

@@ -22,6 +22,11 @@ class MyAwesomeModel(nn.Module):
         )
         
     def forward(self, x):
+        if x.ndim != 4:
+            raise ValueError('Expected input to a 4D tensor')
+        if x.shape[1] != 1 or x.shape[2] != 28 or x.shape[3] != 28:
+            raise ValueError('Expected each sample to have shape [1, 28, 28]')
+            
         return self.classifier(self.backbone(x))
     
     

@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100% [........................................................................] 31400767 / 31400767
+WARNING:root:Only 108 Image will be uploaded.
+Traceback (most recent call last):
+  File "/home/melina/Desktop/MLops/S1_MLops/main.py", line 107, in <module>
+    TrainOREvaluate()
+  File "/home/melina/Desktop/MLops/S1_MLops/main.py", line 34, in __init__
+    getattr(self, args.command)()
+  File "/home/melina/Desktop/MLops/S1_MLops/main.py", line 64, in train
+    if batch % args.log_interval == 0:
+AttributeError: 'Namespace' object has no attribute 'log_interval'

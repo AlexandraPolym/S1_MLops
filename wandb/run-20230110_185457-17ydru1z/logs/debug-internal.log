@@ -1,0 +1,865 @@
+2023-01-10 18:54:57,393 INFO    StreamThr :19085 [internal.py:wandb_internal():87] W&B internal server running at pid: 19085, started at: 2023-01-10 18:54:57.392947
+2023-01-10 18:54:57,398 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: status
+2023-01-10 18:54:57,398 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: status
+2023-01-10 18:54:57,401 DEBUG   SenderThread:19085 [sender.py:send():303] send: header
+2023-01-10 18:54:57,401 INFO    WriterThread:19085 [datastore.py:open_for_write():75] open: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/run-17ydru1z.wandb
+2023-01-10 18:54:57,406 DEBUG   SenderThread:19085 [sender.py:send():303] send: run
+2023-01-10 18:54:58,208 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: check_version
+2023-01-10 18:54:58,225 INFO    SenderThread:19085 [dir_watcher.py:__init__():216] watching files in: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files
+2023-01-10 18:54:58,225 INFO    SenderThread:19085 [sender.py:_start_run_threads():928] run started: 17ydru1z with start time 1673373297.392516
+2023-01-10 18:54:58,225 DEBUG   SenderThread:19085 [sender.py:send():303] send: summary
+2023-01-10 18:54:58,226 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 18:54:58,227 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: check_version
+2023-01-10 18:54:58,394 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: run_start
+2023-01-10 18:54:58,395 DEBUG   HandlerThread:19085 [system_info.py:__init__():31] System info init
+2023-01-10 18:54:58,396 DEBUG   HandlerThread:19085 [system_info.py:__init__():46] System info init done
+2023-01-10 18:54:58,396 INFO    HandlerThread:19085 [system_monitor.py:start():150] Starting system monitor
+2023-01-10 18:54:58,396 INFO    SystemMonitor:19085 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-10 18:54:58,396 INFO    HandlerThread:19085 [system_monitor.py:probe():171] Collecting system info
+2023-01-10 18:54:58,397 INFO    SystemMonitor:19085 [interfaces.py:start():168] Started cpu
+2023-01-10 18:54:58,397 INFO    SystemMonitor:19085 [interfaces.py:start():168] Started disk
+2023-01-10 18:54:58,398 INFO    SystemMonitor:19085 [interfaces.py:start():168] Started memory
+2023-01-10 18:54:58,400 INFO    SystemMonitor:19085 [interfaces.py:start():168] Started network
+2023-01-10 18:54:58,422 DEBUG   HandlerThread:19085 [system_info.py:probe():195] Probing system
+2023-01-10 18:54:58,423 DEBUG   HandlerThread:19085 [system_info.py:_probe_git():180] Probing git
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_info.py:_probe_git():188] Probing git done
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_info.py:probe():241] Probing system done
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-57-generic-x86_64-with-glibc2.31', 'python': '3.10.8', 'heartbeatAt': '2023-01-10T17:54:58.422667', 'startedAt': '2023-01-10T17:54:57.377032', 'docker': None, 'cuda': None, 'args': ('train',), 'state': 'running', 'program': '/home/melina/Desktop/MLops/S1_MLops/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/AlexandraPolym/S1_MLops.git', 'commit': '5c5e50779d0bab5cded38a982b5ca5d26993480a'}, 'email': 's212558@student.dtu.dk', 'root': '/home/melina/Desktop/MLops/S1_MLops', 'host': 'melina-UX310UA', 'username': 'melina', 'executable': '/home/melina/miniconda3/envs/s1_mlops_env/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2593.8745, 'min': 400.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 400.0, 'max': 3100.0}, {'current': 2600.0, 'min': 400.0, 'max': 3100.0}, {'current': 2600.0, 'min': 400.0, 'max': 3100.0}, {'current': 2575.498, 'min': 400.0, 'max': 3100.0}], 'disk': {'total': 56.58684158325195, 'used': 52.244625091552734}, 'memory': {'total': 7.630748748779297}}
+2023-01-10 18:54:58,430 INFO    HandlerThread:19085 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-10 18:54:58,430 INFO    HandlerThread:19085 [system_monitor.py:probe():184] Publishing system info
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-10 18:54:58,430 DEBUG   HandlerThread:19085 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-10 18:54:59,226 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/requirements.txt
+2023-01-10 18:54:59,226 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/conda-environment.yaml
+2023-01-10 18:54:59,226 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-summary.json
+2023-01-10 18:55:01,450 DEBUG   HandlerThread:19085 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-10 18:55:01,451 INFO    HandlerThread:19085 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-10 18:55:01,506 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:55:01,506 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-10 18:55:01,513 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:55:01,514 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:55:01,823 DEBUG   SenderThread:19085 [sender.py:send():303] send: telemetry
+2023-01-10 18:55:02,227 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/conda-environment.yaml
+2023-01-10 18:55:02,227 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-metadata.json
+2023-01-10 18:55:02,499 INFO    Thread-16 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2h0esw0m-wandb-metadata.json
+2023-01-10 18:55:03,228 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:05,310 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:07,406 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:09,458 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:11,496 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:13,541 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:15,665 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:17,727 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:19,736 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:21,861 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:22,734 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:55:22,738 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:55:23,874 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:25,948 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:28,039 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:29,099 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/config.yaml
+2023-01-10 18:55:30,185 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:32,269 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:34,327 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:36,342 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:38,526 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:38,908 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:55:38,913 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:55:40,618 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:41,805 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:43,867 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:45,992 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:48,041 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:50,138 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:52,195 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:54,251 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:56,341 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:56,875 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:55:56,886 DEBUG   SenderThread:19085 [sender.py:send():303] send: telemetry
+2023-01-10 18:55:56,886 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:55:58,357 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:55:58,400 DEBUG   SystemMonitor:19085 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-10 18:55:58,403 DEBUG   SenderThread:19085 [sender.py:send():303] send: stats
+2023-01-10 18:55:59,358 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/config.yaml
+2023-01-10 18:56:12,236 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:56:12,238 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:56:27,639 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 18:56:27,639 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 18:56:28,405 DEBUG   SenderThread:19085 [sender.py:send():303] send: stats
+2023-01-10 18:56:35,287 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,288 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_14f5c0ae962bb3288156.png with policy now
+2023-01-10 18:56:35,299 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,300 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e826f4ae61fba31cef56.png with policy now
+2023-01-10 18:56:35,307 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,308 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_c2c1dc118bb47a4074d6.png with policy now
+2023-01-10 18:56:35,314 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,314 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d3789f3e25f6f65b5d86.png with policy now
+2023-01-10 18:56:35,320 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,321 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_8f8666d11dbf9293fe92.png with policy now
+2023-01-10 18:56:35,325 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,326 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_75c2a43119997f906fa3.png with policy now
+2023-01-10 18:56:35,329 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,330 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_3d149ffda15fc1aefc7c.png with policy now
+2023-01-10 18:56:35,334 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,334 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_3ea9fa3231806e1b852b.png with policy now
+2023-01-10 18:56:35,340 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,341 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_52e8ab36eacd0eee2b1d.png with policy now
+2023-01-10 18:56:35,341 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,342 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_75b2419bf59206cef70c.png with policy now
+2023-01-10 18:56:35,350 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,350 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_37a34377edbbd7980132.png with policy now
+2023-01-10 18:56:35,351 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,352 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d744bd2471c2dba9bf01.png with policy now
+2023-01-10 18:56:35,362 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,362 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_751a814fa257b7c8a56f.png with policy now
+2023-01-10 18:56:35,387 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,401 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_fce5692dd18d9eb354b1.png with policy now
+2023-01-10 18:56:35,402 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,402 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_3bae00a8d48286ebd4f6.png with policy now
+2023-01-10 18:56:35,404 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,407 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_4a0ecb917c4b4b85f516.png
+2023-01-10 18:56:35,412 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e826f4ae61fba31cef56.png
+2023-01-10 18:56:35,414 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_297f8b25949c4e6d69c1.png
+2023-01-10 18:56:35,415 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_670b9f2a120815b03eb0.png
+2023-01-10 18:56:35,415 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c2c1dc118bb47a4074d6.png
+2023-01-10 18:56:35,416 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d3789f3e25f6f65b5d86.png
+2023-01-10 18:56:35,416 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_8f8666d11dbf9293fe92.png
+2023-01-10 18:56:35,417 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3d149ffda15fc1aefc7c.png
+2023-01-10 18:56:35,417 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_52e8ab36eacd0eee2b1d.png
+2023-01-10 18:56:35,418 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d744bd2471c2dba9bf01.png
+2023-01-10 18:56:35,418 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_751a814fa257b7c8a56f.png
+2023-01-10 18:56:35,418 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3ea9fa3231806e1b852b.png
+2023-01-10 18:56:35,412 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_297f8b25949c4e6d69c1.png with policy now
+2023-01-10 18:56:35,421 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,422 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_4a0ecb917c4b4b85f516.png with policy now
+2023-01-10 18:56:35,419 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_75c2a43119997f906fa3.png
+2023-01-10 18:56:35,442 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_fce5692dd18d9eb354b1.png
+2023-01-10 18:56:35,452 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,515 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_670b9f2a120815b03eb0.png with policy now
+2023-01-10 18:56:35,470 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_37a34377edbbd7980132.png
+2023-01-10 18:56:35,531 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3bae00a8d48286ebd4f6.png
+2023-01-10 18:56:35,533 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_75b2419bf59206cef70c.png
+2023-01-10 18:56:35,534 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_14f5c0ae962bb3288156.png
+2023-01-10 18:56:35,535 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media
+2023-01-10 18:56:35,548 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images
+2023-01-10 18:56:35,559 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,560 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_b062b4a9c8835d0450ea.png with policy now
+2023-01-10 18:56:35,589 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,679 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_169a5805f0b02f31426b.png with policy now
+2023-01-10 18:56:35,684 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,691 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ccef3374a84a720e773a.png with policy now
+2023-01-10 18:56:35,704 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,736 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_85b816b470385054aeef.png with policy now
+2023-01-10 18:56:35,751 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:35,752 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_dec93627194e05070128.png with policy now
+2023-01-10 18:56:36,503 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ccef3374a84a720e773a.png
+2023-01-10 18:56:36,505 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_169a5805f0b02f31426b.png
+2023-01-10 18:56:36,507 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_dec93627194e05070128.png
+2023-01-10 18:56:36,511 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b062b4a9c8835d0450ea.png
+2023-01-10 18:56:36,520 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_85b816b470385054aeef.png
+2023-01-10 18:56:36,520 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images
+2023-01-10 18:56:36,534 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,539 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_57a9146a9862b258887f.png with policy now
+2023-01-10 18:56:36,548 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,554 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ab15cc46dd681f0f3781.png with policy now
+2023-01-10 18:56:36,554 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,566 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_1e4d0566e02c71e9155f.png with policy now
+2023-01-10 18:56:36,571 INFO    Thread-17 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/13l7boz2-media/images/examples_0_14f5c0ae962bb3288156.png
+2023-01-10 18:56:36,574 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,574 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a3edb678edc86f900b78.png with policy now
+2023-01-10 18:56:36,574 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,574 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_6d4d1f756aff4dbab578.png with policy now
+2023-01-10 18:56:36,579 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,579 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d7d7b6d58ddc6c804e01.png with policy now
+2023-01-10 18:56:36,581 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,581 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_739bf3f22cff8ccac50e.png with policy now
+2023-01-10 18:56:36,582 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,582 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_3d77166a87a4a9c735cd.png with policy now
+2023-01-10 18:56:36,590 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,590 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_0268c8b30f6b40944f6c.png with policy now
+2023-01-10 18:56:36,592 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,596 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e4f23cdcd2dc20fd5a73.png with policy now
+2023-01-10 18:56:36,625 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,627 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_6dd91701e052b656d5e2.png with policy now
+2023-01-10 18:56:36,633 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,633 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ff8eb3191d47f13da669.png with policy now
+2023-01-10 18:56:36,635 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,635 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d4358174b3a1b3847b7d.png with policy now
+2023-01-10 18:56:36,640 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,640 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_03472dce16d106d27f2b.png with policy now
+2023-01-10 18:56:36,641 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,641 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d2228af5229d1e027420.png with policy now
+2023-01-10 18:56:36,641 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,641 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_0fddf1e3a36ce9e6e630.png with policy now
+2023-01-10 18:56:36,641 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,641 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_3077e85dabf7a00b799e.png with policy now
+2023-01-10 18:56:36,641 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,642 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_cfeca81d3d6bfa9b3237.png with policy now
+2023-01-10 18:56:36,642 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,642 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ec79fcaceb8fe142fbb3.png with policy now
+2023-01-10 18:56:36,642 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,642 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e37b04b1ef2c498afe58.png with policy now
+2023-01-10 18:56:36,642 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,642 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e38247e0d0bddae77e22.png with policy now
+2023-01-10 18:56:36,643 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,644 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_121432d095a5bb12c9ce.png with policy now
+2023-01-10 18:56:36,644 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,644 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_034e7a38d16a04b2feb9.png with policy now
+2023-01-10 18:56:36,650 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,650 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ac09b4568c6560b46517.png with policy now
+2023-01-10 18:56:36,653 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,653 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_f063ba913912a2df587e.png with policy now
+2023-01-10 18:56:36,668 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,668 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ae33d380a3969ceef72b.png with policy now
+2023-01-10 18:56:36,670 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,670 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_9b377b16d31f4c614b9b.png with policy now
+2023-01-10 18:56:36,671 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,672 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_c7ad012a3146a0f6fb1c.png with policy now
+2023-01-10 18:56:36,677 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,677 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_07dc6e3066058f049fd0.png with policy now
+2023-01-10 18:56:36,677 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,678 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_9dcec2eaf8910c2b40d0.png with policy now
+2023-01-10 18:56:36,687 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,687 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a128c0fd530529fc215d.png with policy now
+2023-01-10 18:56:36,723 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,723 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e950e8c1c6421aef6652.png with policy now
+2023-01-10 18:56:36,723 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,724 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_b82916f53f5a51a1b602.png with policy now
+2023-01-10 18:56:36,724 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,724 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_54d851d07fa36f0a0908.png with policy now
+2023-01-10 18:56:36,729 INFO    Thread-20 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2f4x2x0v-media/images/examples_0_d3789f3e25f6f65b5d86.png
+2023-01-10 18:56:36,754 INFO    Thread-24 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/212ovjx8-media/images/examples_0_3ea9fa3231806e1b852b.png
+2023-01-10 18:56:36,757 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,758 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_7c5144455967c0d900c7.png with policy now
+2023-01-10 18:56:36,762 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,765 INFO    Thread-21 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2mk63sgh-media/images/examples_0_8f8666d11dbf9293fe92.png
+2023-01-10 18:56:36,766 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_015b5fc72917adf6282f.png with policy now
+2023-01-10 18:56:36,774 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,774 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d679c2b856eebe90407a.png with policy now
+2023-01-10 18:56:36,775 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,775 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_51017a501ef75cf08ef5.png with policy now
+2023-01-10 18:56:36,775 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,775 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_633bbf8060d7b07fa9fb.png with policy now
+2023-01-10 18:56:36,775 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,775 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d281a2aff7fda471eacf.png with policy now
+2023-01-10 18:56:36,776 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,776 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a6815a1758aba3987e9c.png with policy now
+2023-01-10 18:56:36,780 INFO    Thread-18 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1mlhvdha-media/images/examples_0_e826f4ae61fba31cef56.png
+2023-01-10 18:56:36,788 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,788 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_0663c933ba6704d170cf.png with policy now
+2023-01-10 18:56:36,788 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,788 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_b97d02cc6e2f91aa9a00.png with policy now
+2023-01-10 18:56:36,789 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,790 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_fc0e3a7340f44f411ed7.png with policy now
+2023-01-10 18:56:36,792 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,792 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_288b410d2d0a502e53c8.png with policy now
+2023-01-10 18:56:36,797 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,797 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_6a30a4acdec28c9e09bc.png with policy now
+2023-01-10 18:56:36,811 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,811 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_0f933e1467181056b972.png with policy now
+2023-01-10 18:56:36,827 INFO    Thread-29 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/fsqu7h68-media/images/examples_0_751a814fa257b7c8a56f.png
+2023-01-10 18:56:36,830 INFO    Thread-22 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1nw3r7lb-media/images/examples_0_75c2a43119997f906fa3.png
+2023-01-10 18:56:36,833 INFO    Thread-31 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/dani7fpd-media/images/examples_0_3bae00a8d48286ebd4f6.png
+2023-01-10 18:56:36,835 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,841 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_82b664be25d8e61e0c94.png with policy now
+2023-01-10 18:56:36,849 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,850 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_2ba990263e19a25c182e.png with policy now
+2023-01-10 18:56:36,858 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,861 INFO    Thread-30 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/mfq926a4-media/images/examples_0_fce5692dd18d9eb354b1.png
+2023-01-10 18:56:36,863 INFO    Thread-28 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2y944jkr-media/images/examples_0_d744bd2471c2dba9bf01.png
+2023-01-10 18:56:36,863 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d33fc2c15833f87d2e8f.png with policy now
+2023-01-10 18:56:36,868 INFO    Thread-25 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/34cxevff-media/images/examples_0_52e8ab36eacd0eee2b1d.png
+2023-01-10 18:56:36,871 INFO    Thread-23 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3l7m9uo7-media/images/examples_0_3d149ffda15fc1aefc7c.png
+2023-01-10 18:56:36,879 INFO    Thread-27 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/15w66qso-media/images/examples_0_37a34377edbbd7980132.png
+2023-01-10 18:56:36,891 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:36,905 INFO    Thread-19 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1e6y4g9w-media/images/examples_0_c2c1dc118bb47a4074d6.png
+2023-01-10 18:56:36,933 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_138c1ac915af1983830e.png with policy now
+2023-01-10 18:56:36,995 INFO    Thread-32 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2xbexpwf-media/images/examples_0_4a0ecb917c4b4b85f516.png
+2023-01-10 18:56:37,000 INFO    Thread-34 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3abc8ob2-media/images/examples_0_670b9f2a120815b03eb0.png
+2023-01-10 18:56:37,015 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,015 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_84f7d115f57d4a57d608.png with policy now
+2023-01-10 18:56:37,016 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,016 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_dbb93159ad16f00297f0.png with policy now
+2023-01-10 18:56:37,017 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,044 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_1d16c3c08d2d2cc652fb.png with policy now
+2023-01-10 18:56:37,058 INFO    Thread-26 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1edo9j34-media/images/examples_0_75b2419bf59206cef70c.png
+2023-01-10 18:56:37,071 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,071 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_2872805e4c9bd2efabff.png with policy now
+2023-01-10 18:56:37,072 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,078 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_10d11eed86265539ecc5.png with policy now
+2023-01-10 18:56:37,086 INFO    Thread-33 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2uynrpnx-media/images/examples_0_297f8b25949c4e6d69c1.png
+2023-01-10 18:56:37,103 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-10 18:56:37,143 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,256 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_135750e3ef7b617c1564.png with policy now
+2023-01-10 18:56:37,334 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,334 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_ac1a1a0792cb0d255739.png with policy now
+2023-01-10 18:56:37,339 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,339 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_80436db3eed760e50671.png with policy now
+2023-01-10 18:56:37,339 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,348 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_eb012eae5386d1b00a47.png with policy now
+2023-01-10 18:56:37,396 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,396 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_08b8f58c47065d47bbd4.png with policy now
+2023-01-10 18:56:37,396 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,397 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d3c50c05dec3d1cadb7f.png with policy now
+2023-01-10 18:56:37,461 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,461 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_9b5874748c05b79e3bd3.png with policy now
+2023-01-10 18:56:37,478 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,478 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_9bc69a67eae6fff8dc9f.png with policy now
+2023-01-10 18:56:37,495 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,495 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_d31b2d56ab479e168b87.png with policy now
+2023-01-10 18:56:37,495 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,496 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_df0f13238a76e8688379.png with policy now
+2023-01-10 18:56:37,496 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,498 INFO    Thread-41 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2ktbzzep-media/images/examples_0_ab15cc46dd681f0f3781.png
+2023-01-10 18:56:37,501 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_613455037f5208e59ff6.png with policy now
+2023-01-10 18:56:37,534 INFO    Thread-40 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1v112wdr-media/images/examples_0_57a9146a9862b258887f.png
+2023-01-10 18:56:37,538 INFO    Thread-39 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2gumzel6-media/images/examples_0_dec93627194e05070128.png
+2023-01-10 18:56:37,573 INFO    Thread-36 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3qde2fsn-media/images/examples_0_169a5805f0b02f31426b.png
+2023-01-10 18:56:37,578 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,595 INFO    Thread-42 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2k78kp61-media/images/examples_0_1e4d0566e02c71e9155f.png
+2023-01-10 18:56:37,600 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_96763e53c4460368cac9.png with policy now
+2023-01-10 18:56:37,613 INFO    Thread-38 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/yd27xv51-media/images/examples_0_85b816b470385054aeef.png
+2023-01-10 18:56:37,639 INFO    Thread-49 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3phooikj-media/images/examples_0_e4f23cdcd2dc20fd5a73.png
+2023-01-10 18:56:37,663 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:37,678 INFO    Thread-43 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3te4x11a-media/images/examples_0_a3edb678edc86f900b78.png
+2023-01-10 18:56:37,715 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:56:37,836 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a128c0fd530529fc215d.png
+2023-01-10 18:56:37,883 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0268c8b30f6b40944f6c.png
+2023-01-10 18:56:37,723 INFO    Thread-45 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/23luiis0-media/images/examples_0_d7d7b6d58ddc6c804e01.png
+2023-01-10 18:56:37,728 INFO    Thread-44 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2hx1vjra-media/images/examples_0_6d4d1f756aff4dbab578.png
+2023-01-10 18:56:37,765 INFO    Thread-46 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/19wxqg4c-media/images/examples_0_739bf3f22cff8ccac50e.png
+2023-01-10 18:56:37,775 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_0fa6d64a004f4694e986.png with policy now
+2023-01-10 18:56:37,718 INFO    Thread-50 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3q6wc2c9-media/images/examples_0_6dd91701e052b656d5e2.png
+2023-01-10 18:56:37,873 INFO    Thread-51 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/33fo1fmr-media/images/examples_0_ff8eb3191d47f13da669.png
+2023-01-10 18:56:37,875 INFO    Thread-57 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2lmk554t-media/images/examples_0_cfeca81d3d6bfa9b3237.png
+2023-01-10 18:56:37,720 INFO    Thread-35 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/139d0i8g-media/images/examples_0_b062b4a9c8835d0450ea.png
+2023-01-10 18:56:37,897 INFO    Thread-53 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1m4k8kdu-media/images/examples_0_03472dce16d106d27f2b.png
+2023-01-10 18:56:37,900 INFO    Thread-56 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/81tya4dw-media/images/examples_0_3077e85dabf7a00b799e.png
+2023-01-10 18:56:38,474 INFO    Thread-71 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2kwt9p3s-media/images/examples_0_a128c0fd530529fc215d.png
+2023-01-10 18:56:37,922 INFO    Thread-65 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/26mcjcyw-media/images/examples_0_ae33d380a3969ceef72b.png
+2023-01-10 18:56:37,926 INFO    Thread-61 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1zwaqapz-media/images/examples_0_121432d095a5bb12c9ce.png
+2023-01-10 18:56:37,927 INFO    Thread-37 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3sks5874-media/images/examples_0_ccef3374a84a720e773a.png
+2023-01-10 18:56:37,931 INFO    Thread-48 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3t9mq090-media/images/examples_0_0268c8b30f6b40944f6c.png
+2023-01-10 18:56:37,965 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:38,523 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_922c58d2d8740dee6b0a.png with policy now
+2023-01-10 18:56:38,088 INFO    Thread-60 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1ugfzfk8-media/images/examples_0_e38247e0d0bddae77e22.png
+2023-01-10 18:56:38,094 INFO    Thread-64 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3pa1011d-media/images/examples_0_f063ba913912a2df587e.png
+2023-01-10 18:56:38,120 INFO    Thread-67 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2kc1z9tj-media/images/examples_0_c7ad012a3146a0f6fb1c.png
+2023-01-10 18:56:38,122 INFO    Thread-63 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/gikc9033-media/images/examples_0_ac09b4568c6560b46517.png
+2023-01-10 18:56:38,163 INFO    Thread-54 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2z669rhy-media/images/examples_0_d2228af5229d1e027420.png
+2023-01-10 18:56:38,169 INFO    Thread-69 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3eqf2tr4-media/images/examples_0_9dcec2eaf8910c2b40d0.png
+2023-01-10 18:56:38,219 INFO    Thread-62 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1zhlnscg-media/images/examples_0_034e7a38d16a04b2feb9.png
+2023-01-10 18:56:38,221 INFO    Thread-58 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3p0cni2d-media/images/examples_0_ec79fcaceb8fe142fbb3.png
+2023-01-10 18:56:38,225 INFO    Thread-47 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/39h3uslr-media/images/examples_0_3d77166a87a4a9c735cd.png
+2023-01-10 18:56:38,353 INFO    Thread-68 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3fhzwixt-media/images/examples_0_07dc6e3066058f049fd0.png
+2023-01-10 18:56:38,354 INFO    Thread-70 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/gp94j64x-media/images/examples_0_d3789f3e25f6f65b5d86.png
+2023-01-10 18:56:38,365 INFO    Thread-59 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/ddibp2yv-media/images/examples_0_e37b04b1ef2c498afe58.png
+2023-01-10 18:56:38,429 INFO    Thread-66 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/337rl5wu-media/images/examples_0_9b377b16d31f4c614b9b.png
+2023-01-10 18:56:38,448 INFO    Thread-52 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/38pyoo0l-media/images/examples_0_d4358174b3a1b3847b7d.png
+2023-01-10 18:56:37,904 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_08b8f58c47065d47bbd4.png
+2023-01-10 18:56:38,503 INFO    Thread-72 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/kfjnxlzc-media/images/examples_0_8f8666d11dbf9293fe92.png
+2023-01-10 18:56:38,082 INFO    Thread-55 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3jzpiwcp-media/images/examples_0_0fddf1e3a36ce9e6e630.png
+2023-01-10 18:56:38,583 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:38,748 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_62fe3e728b872ca5e282.png with policy now
+2023-01-10 18:56:38,750 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:38,760 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_295d9ce218f5f775d784.png with policy now
+2023-01-10 18:56:38,775 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a1bab9b8fc29fe19c066.png
+2023-01-10 18:56:38,822 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:38,880 INFO    Thread-74 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/hot9dfq6-media/images/examples_0_b82916f53f5a51a1b602.png
+2023-01-10 18:56:38,885 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a1f00df692f24104cf38.png with policy now
+2023-01-10 18:56:38,960 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6985a3d724ad2cd9ebf0.png
+2023-01-10 18:56:38,971 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0f933e1467181056b972.png
+2023-01-10 18:56:38,981 INFO    Thread-73 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/6hh7t7ql-media/images/examples_0_e950e8c1c6421aef6652.png
+2023-01-10 18:56:38,994 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:38,995 INFO    Thread-76 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1la5o9ef-media/images/examples_0_7c5144455967c0d900c7.png
+2023-01-10 18:56:39,031 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_147e411574d7e43384e7.png with policy now
+2023-01-10 18:56:39,038 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d2228af5229d1e027420.png
+2023-01-10 18:56:39,063 INFO    Thread-75 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2v1qjylk-media/images/examples_0_54d851d07fa36f0a0908.png
+2023-01-10 18:56:39,134 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:39,184 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a1bab9b8fc29fe19c066.png with policy now
+2023-01-10 18:56:39,143 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3077e85dabf7a00b799e.png
+2023-01-10 18:56:39,242 INFO    Thread-81 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1txvy815-media/images/examples_0_d281a2aff7fda471eacf.png
+2023-01-10 18:56:39,262 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:39,263 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_99ced8f10d15b556c5d8.png with policy now
+2023-01-10 18:56:39,264 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_2ba990263e19a25c182e.png
+2023-01-10 18:56:39,148 INFO    Thread-78 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/nn6020t9-media/images/examples_0_d679c2b856eebe90407a.png
+2023-01-10 18:56:39,316 INFO    Thread-83 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/18kj1ubd-media/images/examples_0_0663c933ba6704d170cf.png
+2023-01-10 18:56:39,323 INFO    Thread-80 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2zbzhply-media/images/examples_0_633bbf8060d7b07fa9fb.png
+2023-01-10 18:56:39,414 INFO    Thread-77 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2wdznpbu-media/images/examples_0_015b5fc72917adf6282f.png
+2023-01-10 18:56:39,426 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_eb012eae5386d1b00a47.png
+2023-01-10 18:56:39,627 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_57a9146a9862b258887f.png
+2023-01-10 18:56:39,427 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:39,705 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_55d1dde91abbe3d4faa8.png with policy now
+2023-01-10 18:56:39,477 INFO    Thread-79 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1o13lf69-media/images/examples_0_51017a501ef75cf08ef5.png
+2023-01-10 18:56:39,707 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:39,755 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_6985a3d724ad2cd9ebf0.png with policy now
+2023-01-10 18:56:39,757 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:39,714 INFO    Thread-84 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2w5dq6ez-media/images/examples_0_b97d02cc6e2f91aa9a00.png
+2023-01-10 18:56:39,758 INFO    Thread-85 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/240pbtfk-media/images/examples_0_fc0e3a7340f44f411ed7.png
+2023-01-10 18:56:39,780 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_8a55183bd7536dac7ff4.png with policy now
+2023-01-10 18:56:39,941 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9bc69a67eae6fff8dc9f.png
+2023-01-10 18:56:39,969 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,020 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_53ca75e06ed579ec20ee.png with policy now
+2023-01-10 18:56:40,009 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_f063ba913912a2df587e.png
+2023-01-10 18:56:40,036 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,050 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d7d7b6d58ddc6c804e01.png
+2023-01-10 18:56:40,053 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_a8fa216a8692ea7d4630.png with policy now
+2023-01-10 18:56:40,097 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,097 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_e8117002a48028e3c80f.png with policy now
+2023-01-10 18:56:40,094 INFO    Thread-82 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3sbx3d45-media/images/examples_0_a6815a1758aba3987e9c.png
+2023-01-10 18:56:40,104 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,128 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_295d9ce218f5f775d784.png
+2023-01-10 18:56:40,210 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_c150625d572a88f83c2b.png with policy now
+2023-01-10 18:56:40,227 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_dbb93159ad16f00297f0.png
+2023-01-10 18:56:40,233 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_55d1dde91abbe3d4faa8.png
+2023-01-10 18:56:40,231 INFO    Thread-86 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1qw8dzk3-media/images/examples_0_751a814fa257b7c8a56f.png
+2023-01-10 18:56:40,259 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ac09b4568c6560b46517.png
+2023-01-10 18:56:40,267 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,268 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_00d41efd69590858a533.png with policy now
+2023-01-10 18:56:40,274 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_1e4d0566e02c71e9155f.png
+2023-01-10 18:56:40,286 INFO    Thread-87 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/voz64zsa-media/images/examples_0_288b410d2d0a502e53c8.png
+2023-01-10 18:56:40,287 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_df0f13238a76e8688379.png
+2023-01-10 18:56:40,290 DEBUG   SenderThread:19085 [sender.py:send():303] send: files
+2023-01-10 18:56:40,292 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file media/images/examples_0_4599aabaff0d1d90536a.png with policy now
+2023-01-10 18:56:40,298 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_03472dce16d106d27f2b.png
+2023-01-10 18:56:40,309 DEBUG   SenderThread:19085 [sender.py:send():303] send: history
+2023-01-10 18:56:40,320 DEBUG   SenderThread:19085 [sender.py:send():303] send: summary
+2023-01-10 18:56:40,320 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e950e8c1c6421aef6652.png
+2023-01-10 18:56:40,337 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d4358174b3a1b3847b7d.png
+2023-01-10 18:56:40,337 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b97d02cc6e2f91aa9a00.png
+2023-01-10 18:56:40,349 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_cfeca81d3d6bfa9b3237.png
+2023-01-10 18:56:40,349 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c7ad012a3146a0f6fb1c.png
+2023-01-10 18:56:40,349 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e37b04b1ef2c498afe58.png
+2023-01-10 18:56:40,362 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 18:56:40,362 DEBUG   SenderThread:19085 [sender.py:send():303] send: exit
+2023-01-10 18:56:40,362 INFO    SenderThread:19085 [sender.py:send_exit():442] handling exit code: 1
+2023-01-10 18:56:40,363 INFO    SenderThread:19085 [sender.py:send_exit():444] handling runtime: 101
+2023-01-10 18:56:40,377 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 18:56:40,377 INFO    SenderThread:19085 [sender.py:send_exit():450] send defer
+2023-01-10 18:56:40,378 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e8117002a48028e3c80f.png
+2023-01-10 18:56:40,378 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_10d11eed86265539ecc5.png
+2023-01-10 18:56:40,378 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_034e7a38d16a04b2feb9.png
+2023-01-10 18:56:40,378 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0fddf1e3a36ce9e6e630.png
+2023-01-10 18:56:40,378 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_922c58d2d8740dee6b0a.png
+2023-01-10 18:56:40,379 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d679c2b856eebe90407a.png
+2023-01-10 18:56:40,379 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6dd91701e052b656d5e2.png
+2023-01-10 18:56:40,379 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_fc0e3a7340f44f411ed7.png
+2023-01-10 18:56:40,379 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_96763e53c4460368cac9.png
+2023-01-10 18:56:40,380 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9b377b16d31f4c614b9b.png
+2023-01-10 18:56:40,383 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,384 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_99ced8f10d15b556c5d8.png
+2023-01-10 18:56:40,385 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-10 18:56:40,394 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,394 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-10 18:56:40,394 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 1
+2023-01-10 18:56:40,400 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_2872805e4c9bd2efabff.png
+2023-01-10 18:56:40,404 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,408 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-10 18:56:40,408 INFO    HandlerThread:19085 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-10 18:56:40,413 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_82b664be25d8e61e0c94.png
+2023-01-10 18:56:40,424 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_54d851d07fa36f0a0908.png
+2023-01-10 18:56:40,431 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_8a55183bd7536dac7ff4.png
+2023-01-10 18:56:40,431 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_51017a501ef75cf08ef5.png
+2023-01-10 18:56:40,435 INFO    Thread-90 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3dnms501-media/images/examples_0_75c2a43119997f906fa3.png
+2023-01-10 18:56:40,437 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_147e411574d7e43384e7.png
+2023-01-10 18:56:40,446 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d31b2d56ab479e168b87.png
+2023-01-10 18:56:40,446 DEBUG   SystemMonitor:19085 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-10 18:56:40,446 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ac1a1a0792cb0d255739.png
+2023-01-10 18:56:40,448 INFO    Thread-95 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1c9un2x7-media/images/examples_0_2ba990263e19a25c182e.png
+2023-01-10 18:56:40,449 INFO    HandlerThread:19085 [interfaces.py:finish():175] Joined cpu
+2023-01-10 18:56:40,455 DEBUG   SystemMonitor:19085 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-10 18:56:40,470 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_62fe3e728b872ca5e282.png
+2023-01-10 18:56:40,478 INFO    Thread-89 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2nk2khv7-media/images/examples_0_3ea9fa3231806e1b852b.png
+2023-01-10 18:56:40,482 INFO    HandlerThread:19085 [interfaces.py:finish():175] Joined disk
+2023-01-10 18:56:40,533 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ab15cc46dd681f0f3781.png
+2023-01-10 18:56:40,540 INFO    HandlerThread:19085 [interfaces.py:finish():175] Joined memory
+2023-01-10 18:56:40,558 INFO    HandlerThread:19085 [interfaces.py:finish():175] Joined network
+2023-01-10 18:56:40,564 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,564 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-10 18:56:40,564 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 2
+2023-01-10 18:56:40,576 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ec79fcaceb8fe142fbb3.png
+2023-01-10 18:56:40,576 DEBUG   SenderThread:19085 [sender.py:send():303] send: stats
+2023-01-10 18:56:40,605 INFO    Thread-94 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/20jjk98x-media/images/examples_0_3bae00a8d48286ebd4f6.png
+2023-01-10 18:56:40,606 INFO    Thread-92 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3cqfzi3s-media/images/examples_0_82b664be25d8e61e0c94.png
+2023-01-10 18:56:40,610 INFO    Thread-91 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/7wb19ffh-media/images/examples_0_fce5692dd18d9eb354b1.png
+2023-01-10 18:56:40,623 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,641 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6a30a4acdec28c9e09bc.png
+2023-01-10 18:56:40,669 INFO    Thread-93 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2h0g9ewn-media/images/examples_0_37a34377edbbd7980132.png
+2023-01-10 18:56:40,701 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-10 18:56:40,703 INFO    Thread-98 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2auhtkz7-media/images/examples_0_670b9f2a120815b03eb0.png
+2023-01-10 18:56:40,760 INFO    Thread-96 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/234xct6o-media/images/examples_0_14f5c0ae962bb3288156.png
+2023-01-10 18:56:40,770 INFO    Thread-97 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1z4dd305-media/images/examples_0_d33fc2c15833f87d2e8f.png
+2023-01-10 18:56:40,779 INFO    Thread-101:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/13srlihp-media/images/examples_0_ac1a1a0792cb0d255739.png
+2023-01-10 18:56:40,813 INFO    Thread-102:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/gdzjvoho-media/images/examples_0_80436db3eed760e50671.png
+2023-01-10 18:56:40,813 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3d77166a87a4a9c735cd.png
+2023-01-10 18:56:40,821 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,823 INFO    Thread-100:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2sbip2yu-media/images/examples_0_e826f4ae61fba31cef56.png
+2023-01-10 18:56:40,824 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 18:56:40,841 INFO    Thread-88 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2h5jv96q-media/images/examples_0_6a30a4acdec28c9e09bc.png
+2023-01-10 18:56:40,851 INFO    Thread-99 :19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2xcv45et-media/images/examples_0_dec93627194e05070128.png
+2023-01-10 18:56:40,870 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_633bbf8060d7b07fa9fb.png
+2023-01-10 18:56:40,870 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-10 18:56:40,909 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 3
+2023-01-10 18:56:40,910 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 18:56:40,910 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_015b5fc72917adf6282f.png
+2023-01-10 18:56:40,910 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,911 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-10 18:56:40,912 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_121432d095a5bb12c9ce.png
+2023-01-10 18:56:40,912 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,912 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-10 18:56:40,912 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 4
+2023-01-10 18:56:40,913 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,913 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_80436db3eed760e50671.png
+2023-01-10 18:56:40,913 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-10 18:56:40,914 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d3c50c05dec3d1cadb7f.png
+2023-01-10 18:56:40,914 DEBUG   SenderThread:19085 [sender.py:send():303] send: summary
+2023-01-10 18:56:40,918 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_613455037f5208e59ff6.png
+2023-01-10 18:56:40,918 INFO    SenderThread:19085 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 18:56:40,918 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,918 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-10 18:56:40,918 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0663c933ba6704d170cf.png
+2023-01-10 18:56:40,918 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 5
+2023-01-10 18:56:40,922 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a1f00df692f24104cf38.png
+2023-01-10 18:56:40,923 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,923 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-10 18:56:40,924 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,924 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_135750e3ef7b617c1564.png
+2023-01-10 18:56:40,924 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-10 18:56:40,926 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 6
+2023-01-10 18:56:40,926 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d33fc2c15833f87d2e8f.png
+2023-01-10 18:56:40,927 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:40,931 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-10 18:56:40,933 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_288b410d2d0a502e53c8.png
+2023-01-10 18:56:40,934 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:40,939 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-10 18:56:40,946 INFO    Thread-105:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2vje8uqb-media/images/examples_0_52e8ab36eacd0eee2b1d.png
+2023-01-10 18:56:40,953 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_7c5144455967c0d900c7.png
+2023-01-10 18:56:40,966 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a6815a1758aba3987e9c.png
+2023-01-10 18:56:40,968 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a3edb678edc86f900b78.png
+2023-01-10 18:56:40,968 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_07dc6e3066058f049fd0.png
+2023-01-10 18:56:40,968 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e4f23cdcd2dc20fd5a73.png
+2023-01-10 18:56:40,969 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_84f7d115f57d4a57d608.png
+2023-01-10 18:56:40,969 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d281a2aff7fda471eacf.png
+2023-01-10 18:56:40,969 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b82916f53f5a51a1b602.png
+2023-01-10 18:56:40,969 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_4599aabaff0d1d90536a.png
+2023-01-10 18:56:40,970 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9dcec2eaf8910c2b40d0.png
+2023-01-10 18:56:40,973 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_138c1ac915af1983830e.png
+2023-01-10 18:56:40,974 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0fa6d64a004f4694e986.png
+2023-01-10 18:56:40,975 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_53ca75e06ed579ec20ee.png
+2023-01-10 18:56:40,976 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_00d41efd69590858a533.png
+2023-01-10 18:56:40,976 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a8fa216a8692ea7d4630.png
+2023-01-10 18:56:40,977 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ae33d380a3969ceef72b.png
+2023-01-10 18:56:40,977 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_1d16c3c08d2d2cc652fb.png
+2023-01-10 18:56:40,978 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ff8eb3191d47f13da669.png
+2023-01-10 18:56:40,981 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_739bf3f22cff8ccac50e.png
+2023-01-10 18:56:40,982 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e38247e0d0bddae77e22.png
+2023-01-10 18:56:40,982 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c150625d572a88f83c2b.png
+2023-01-10 18:56:40,983 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6d4d1f756aff4dbab578.png
+2023-01-10 18:56:40,983 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_created():275] file/dir created: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9b5874748c05b79e3bd3.png
+2023-01-10 18:56:40,983 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images
+2023-01-10 18:56:41,004 INFO    Thread-107:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2u0h5auj-media/images/examples_0_eb012eae5386d1b00a47.png
+2023-01-10 18:56:41,019 INFO    Thread-106:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2em7e008-media/images/examples_0_d744bd2471c2dba9bf01.png
+2023-01-10 18:56:41,045 INFO    Thread-109:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1pftpqs2-media/images/examples_0_0f933e1467181056b972.png
+2023-01-10 18:56:41,059 INFO    Thread-108:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/b7dcn4ei-media/images/examples_0_08b8f58c47065d47bbd4.png
+2023-01-10 18:56:41,107 INFO    Thread-111:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2hqsl8dr-media/images/examples_0_4a0ecb917c4b4b85f516.png
+2023-01-10 18:56:41,113 INFO    Thread-116:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/7f14qgnt-media/images/examples_0_1d16c3c08d2d2cc652fb.png
+2023-01-10 18:56:41,153 INFO    Thread-112:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/ca3t6fil-media/images/examples_0_75b2419bf59206cef70c.png
+2023-01-10 18:56:41,155 INFO    Thread-115:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3u39vlhm-media/images/examples_0_dbb93159ad16f00297f0.png
+2023-01-10 18:56:41,176 INFO    Thread-113:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/bpk9e3gp-media/images/examples_0_138c1ac915af1983830e.png
+2023-01-10 18:56:41,205 INFO    Thread-117:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/17jsyntd-media/images/examples_0_2872805e4c9bd2efabff.png
+2023-01-10 18:56:41,224 INFO    Thread-114:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2biw64d4-media/images/examples_0_84f7d115f57d4a57d608.png
+2023-01-10 18:56:41,242 INFO    Thread-122:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3jfthzw4-media/images/examples_0_b062b4a9c8835d0450ea.png
+2023-01-10 18:56:41,247 INFO    Thread-110:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3qniwh8s-media/images/examples_0_297f8b25949c4e6d69c1.png
+2023-01-10 18:56:41,254 INFO    Thread-119:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/vkjzl334-media/images/examples_0_135750e3ef7b617c1564.png
+2023-01-10 18:56:41,277 INFO    Thread-120:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ao84iw5-media/images/examples_0_ccef3374a84a720e773a.png
+2023-01-10 18:56:41,279 INFO    Thread-118:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/96kkx0uy-media/images/examples_0_10d11eed86265539ecc5.png
+2023-01-10 18:56:41,281 INFO    Thread-125:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/24b7uxpa-media/images/examples_0_9b5874748c05b79e3bd3.png
+2023-01-10 18:56:41,288 INFO    Thread-128:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/bln2s2ip-media/images/examples_0_df0f13238a76e8688379.png
+2023-01-10 18:56:41,289 INFO    Thread-129:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/14vg7jm5-media/images/examples_0_613455037f5208e59ff6.png
+2023-01-10 18:56:41,296 INFO    Thread-124:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/36o1lux9-media/images/examples_0_d3c50c05dec3d1cadb7f.png
+2023-01-10 18:56:41,298 INFO    Thread-126:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1xkkmvgb-media/images/examples_0_9bc69a67eae6fff8dc9f.png
+2023-01-10 18:56:41,314 INFO    Thread-130:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3cbrwoed-media/images/examples_0_96763e53c4460368cac9.png
+2023-01-10 18:56:41,316 INFO    Thread-135:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/29m3b4a9-media/images/examples_0_62fe3e728b872ca5e282.png
+2023-01-10 18:56:41,317 INFO    Thread-127:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2mgtkzzb-media/images/examples_0_d31b2d56ab479e168b87.png
+2023-01-10 18:56:41,341 INFO    Thread-132:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3oh0d8my-media/images/examples_0_0268c8b30f6b40944f6c.png
+2023-01-10 18:56:41,346 INFO    Thread-133:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2xc9j3zs-media/images/examples_0_0fa6d64a004f4694e986.png
+2023-01-10 18:56:41,346 INFO    Thread-134:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ufshqx2-media/images/examples_0_922c58d2d8740dee6b0a.png
+2023-01-10 18:56:41,351 INFO    Thread-123:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ml830ch-media/images/examples_0_85b816b470385054aeef.png
+2023-01-10 18:56:41,357 INFO    Thread-137:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1wszq3jd-media/images/examples_0_a1bab9b8fc29fe19c066.png
+2023-01-10 18:56:41,359 INFO    Thread-131:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2rzvn7ut-media/images/examples_0_a128c0fd530529fc215d.png
+2023-01-10 18:56:41,360 INFO    Thread-138:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/13yncqmw-media/images/examples_0_6985a3d724ad2cd9ebf0.png
+2023-01-10 18:56:41,441 INFO    Thread-139:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1tvmckn7-media/images/examples_0_a1f00df692f24104cf38.png
+2023-01-10 18:56:41,445 INFO    Thread-136:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/26b39yu0-media/images/examples_0_295d9ce218f5f775d784.png
+2023-01-10 18:56:41,454 INFO    Thread-140:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/34r0ixw7-media/images/examples_0_147e411574d7e43384e7.png
+2023-01-10 18:56:41,526 INFO    Thread-143:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/36nbbb0x-media/images/examples_0_99ced8f10d15b556c5d8.png
+2023-01-10 18:56:41,546 INFO    Thread-141:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2917kl08-media/images/examples_0_d2228af5229d1e027420.png
+2023-01-10 18:56:41,596 INFO    Thread-148:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/24u9qsg3-media/images/examples_0_f063ba913912a2df587e.png
+2023-01-10 18:56:41,597 INFO    Thread-146:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3jvaouu8-media/images/examples_0_8a55183bd7536dac7ff4.png
+2023-01-10 18:56:41,607 INFO    Thread-149:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1lesb4h0-media/images/examples_0_a8fa216a8692ea7d4630.png
+2023-01-10 18:56:41,614 INFO    Thread-145:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/30dp6t06-media/images/examples_0_57a9146a9862b258887f.png
+2023-01-10 18:56:41,621 INFO    Thread-150:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/pib3rsmj-media/images/examples_0_e8117002a48028e3c80f.png
+2023-01-10 18:56:41,622 INFO    Thread-147:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/226o5zz0-media/images/examples_0_53ca75e06ed579ec20ee.png
+2023-01-10 18:56:41,628 INFO    Thread-151:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/150dvi22-media/images/examples_0_2ba990263e19a25c182e.png
+2023-01-10 18:56:41,648 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:56:41,679 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-summary.json
+2023-01-10 18:56:41,699 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 18:56:41,762 INFO    Thread-153:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1xzpwcyd-media/images/examples_0_c150625d572a88f83c2b.png
+2023-01-10 18:56:41,795 INFO    Thread-154:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/12u3fltv-media/images/examples_0_ac09b4568c6560b46517.png
+2023-01-10 18:56:41,797 INFO    Thread-156:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2p6f6kle-media/images/examples_0_00d41efd69590858a533.png
+2023-01-10 18:56:41,811 INFO    Thread-160:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3rw3or9y-media/images/examples_0_d4358174b3a1b3847b7d.png
+2023-01-10 18:56:41,847 INFO    Thread-157:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/lesslshy-media/images/examples_0_4599aabaff0d1d90536a.png
+2023-01-10 18:56:41,850 INFO    Thread-152:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/rdldb55a-media/images/examples_0_d7d7b6d58ddc6c804e01.png
+2023-01-10 18:56:41,876 INFO    Thread-155:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/110ox7l3-media/images/examples_0_1e4d0566e02c71e9155f.png
+2023-01-10 18:56:41,887 INFO    Thread-162:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1pvgd32e-media/images/examples_0_cfeca81d3d6bfa9b3237.png
+2023-01-10 18:56:41,887 INFO    Thread-158:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3i5y4b3a-media/images/examples_0_03472dce16d106d27f2b.png
+2023-01-10 18:56:41,953 INFO    Thread-164:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ck8gqmp-media/images/examples_0_e37b04b1ef2c498afe58.png
+2023-01-10 18:56:41,958 INFO    Thread-159:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/o4aqf7ha-media/images/examples_0_e950e8c1c6421aef6652.png
+2023-01-10 18:56:41,975 INFO    Thread-161:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1u4ldeex-media/images/examples_0_b97d02cc6e2f91aa9a00.png
+2023-01-10 18:56:42,008 INFO    Thread-165:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2es29wjs-media/images/examples_0_eb012eae5386d1b00a47.png
+2023-01-10 18:56:42,029 INFO    Thread-169:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3pefj4kt-media/images/examples_0_6dd91701e052b656d5e2.png
+2023-01-10 18:56:42,064 INFO    Thread-163:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/kcuryn4q-media/images/examples_0_c7ad012a3146a0f6fb1c.png
+2023-01-10 18:56:42,077 INFO    Thread-167:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/dfdpmy7c-media/images/examples_0_0fddf1e3a36ce9e6e630.png
+2023-01-10 18:56:42,079 INFO    Thread-175:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2krwn6zs-media/images/examples_0_51017a501ef75cf08ef5.png
+2023-01-10 18:56:42,087 INFO    Thread-170:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/45qhbg0h-media/images/examples_0_fc0e3a7340f44f411ed7.png
+2023-01-10 18:56:42,095 INFO    Thread-166:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/378mduxs-media/images/examples_0_034e7a38d16a04b2feb9.png
+2023-01-10 18:56:42,104 INFO    Thread-172:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2eavcfgw-media/images/examples_0_0f933e1467181056b972.png
+2023-01-10 18:56:42,127 INFO    Thread-121:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1e4skky7-media/images/examples_0_169a5805f0b02f31426b.png
+2023-01-10 18:56:42,130 INFO    Thread-174:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1ataq8a5-media/images/examples_0_54d851d07fa36f0a0908.png
+2023-01-10 18:56:42,154 INFO    Thread-168:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1sgmeu37-media/images/examples_0_d679c2b856eebe90407a.png
+2023-01-10 18:56:42,156 INFO    Thread-177:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2adzqbnu-media/images/examples_0_ab15cc46dd681f0f3781.png
+2023-01-10 18:56:42,181 INFO    Thread-171:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2czn7bzn-media/images/examples_0_9b377b16d31f4c614b9b.png
+2023-01-10 18:56:42,256 INFO    Thread-173:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2f9o5rbm-media/images/examples_0_82b664be25d8e61e0c94.png
+2023-01-10 18:56:42,278 INFO    Thread-144:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1rz4tdex-media/images/examples_0_55d1dde91abbe3d4faa8.png
+2023-01-10 18:56:42,280 INFO    Thread-178:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2b9qdr0a-media/images/examples_0_08b8f58c47065d47bbd4.png
+2023-01-10 18:56:42,284 INFO    Thread-179:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ukvt0sw-media/images/examples_0_ae33d380a3969ceef72b.png
+2023-01-10 18:56:42,298 INFO    Thread-176:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1kqveze2-media/images/examples_0_ac1a1a0792cb0d255739.png
+2023-01-10 18:56:42,406 INFO    Thread-187:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/34vxcxu2-media/images/examples_0_ec79fcaceb8fe142fbb3.png
+2023-01-10 18:56:42,421 INFO    Thread-181:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1dfxomrk-media/images/examples_0_1d16c3c08d2d2cc652fb.png
+2023-01-10 18:56:42,441 INFO    Thread-188:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3nbp9sy9-media/images/examples_0_6a30a4acdec28c9e09bc.png
+2023-01-10 18:56:42,444 INFO    Thread-185:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1wx4m630-media/images/examples_0_62fe3e728b872ca5e282.png
+2023-01-10 18:56:42,446 INFO    Thread-182:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/373y0yp5-media/images/examples_0_dbb93159ad16f00297f0.png
+2023-01-10 18:56:42,455 INFO    Thread-189:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/5vvuxodw-media/images/examples_0_3d77166a87a4a9c735cd.png
+2023-01-10 18:56:42,477 INFO    Thread-180:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1oj2l4rk-media/images/examples_0_10d11eed86265539ecc5.png
+2023-01-10 18:56:42,479 INFO    Thread-193:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2zjou8vi-media/images/examples_0_121432d095a5bb12c9ce.png
+2023-01-10 18:56:42,482 INFO    Thread-186:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2yj7qzxz-media/images/examples_0_df0f13238a76e8688379.png
+2023-01-10 18:56:42,484 INFO    Thread-191:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1pbuqw7z-media/images/examples_0_633bbf8060d7b07fa9fb.png
+2023-01-10 18:56:42,497 INFO    Thread-190:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/w7imen8g-media/images/examples_0_ff8eb3191d47f13da669.png
+2023-01-10 18:56:42,547 INFO    Thread-183:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3ot1hcgj-media/images/examples_0_2872805e4c9bd2efabff.png
+2023-01-10 18:56:42,567 INFO    Thread-184:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1vyale68-media/images/examples_0_d31b2d56ab479e168b87.png
+2023-01-10 18:56:42,595 INFO    Thread-192:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3tgvkjym-media/images/examples_0_015b5fc72917adf6282f.png
+2023-01-10 18:56:42,599 INFO    Thread-196:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1o0yf8vz-media/images/examples_0_e38247e0d0bddae77e22.png
+2023-01-10 18:56:42,618 INFO    Thread-197:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1cyfnlgb-media/images/examples_0_d3c50c05dec3d1cadb7f.png
+2023-01-10 18:56:42,639 INFO    Thread-194:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/bzcq2pzv-media/images/examples_0_739bf3f22cff8ccac50e.png
+2023-01-10 18:56:42,645 INFO    Thread-103:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3lrifgpn-media/images/examples_0_c2c1dc118bb47a4074d6.png
+2023-01-10 18:56:42,650 INFO    Thread-104:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3phnrg9s-media/images/examples_0_3d149ffda15fc1aefc7c.png
+2023-01-10 18:56:42,723 INFO    Thread-200:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/a5d2f2hc-media/images/examples_0_a1f00df692f24104cf38.png
+2023-01-10 18:56:42,764 INFO    Thread-199:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1igs1moh-media/images/examples_0_0663c933ba6704d170cf.png
+2023-01-10 18:56:42,772 INFO    Thread-205:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/32euhsfi-media/images/examples_0_6d4d1f756aff4dbab578.png
+2023-01-10 18:56:42,791 INFO    Thread-207:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/316tlk86-media/images/examples_0_a6815a1758aba3987e9c.png
+2023-01-10 18:56:42,924 INFO    Thread-217:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/qvg6whwj-media/images/examples_0_0fa6d64a004f4694e986.png
+2023-01-10 18:56:42,792 INFO    Thread-198:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/20keoxyt-media/images/examples_0_613455037f5208e59ff6.png
+2023-01-10 18:56:42,798 INFO    Thread-210:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1y7w8hr1-media/images/examples_0_e4f23cdcd2dc20fd5a73.png
+2023-01-10 18:56:42,798 INFO    Thread-195:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2z5c9yp8-media/images/examples_0_80436db3eed760e50671.png
+2023-01-10 18:56:42,813 INFO    Thread-204:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/hp3a6szz-media/images/examples_0_7c5144455967c0d900c7.png
+2023-01-10 18:56:42,822 INFO    Thread-211:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/120iglgm-media/images/examples_0_84f7d115f57d4a57d608.png
+2023-01-10 18:56:42,828 INFO    Thread-206:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3bwkjohh-media/images/examples_0_9b5874748c05b79e3bd3.png
+2023-01-10 18:56:42,840 INFO    Thread-201:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1tb1c36v-media/images/examples_0_135750e3ef7b617c1564.png
+2023-01-10 18:56:42,846 INFO    Thread-202:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/rzfjqad4-media/images/examples_0_d33fc2c15833f87d2e8f.png
+2023-01-10 18:56:42,875 INFO    Thread-209:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2m0qmdws-media/images/examples_0_07dc6e3066058f049fd0.png
+2023-01-10 18:56:42,921 INFO    Thread-203:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1vuf9a53-media/images/examples_0_288b410d2d0a502e53c8.png
+2023-01-10 18:56:42,792 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 7
+2023-01-10 18:56:42,940 INFO    Thread-212:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3h8o6pm7-media/images/examples_0_d281a2aff7fda471eacf.png
+2023-01-10 18:56:42,950 INFO    Thread-213:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/vcn01vqc-media/images/examples_0_b82916f53f5a51a1b602.png
+2023-01-10 18:56:42,958 INFO    Thread-216:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3r95sir6-media/images/examples_0_138c1ac915af1983830e.png
+2023-01-10 18:56:42,958 INFO    Thread-215:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/cytuevg8-media/images/examples_0_9dcec2eaf8910c2b40d0.png
+2023-01-10 18:56:42,969 INFO    Thread-220:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/oivr8dls-media/images/examples_0_a8fa216a8692ea7d4630.png
+2023-01-10 18:56:42,993 INFO    Thread-222:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1ymwuv1o-media/images/examples_0_6985a3d724ad2cd9ebf0.png
+2023-01-10 18:56:42,994 INFO    Thread-227:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/hx48q83k-media/images/examples_0_96763e53c4460368cac9.png
+2023-01-10 18:56:42,994 INFO    Thread-223:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1rxpbg1a-media/images/examples_0_295d9ce218f5f775d784.png
+2023-01-10 18:56:43,059 INFO    Thread-219:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/10086dsr-media/images/examples_0_00d41efd69590858a533.png
+2023-01-10 18:56:43,062 INFO    Thread-218:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/2z0jb20x-media/images/examples_0_53ca75e06ed579ec20ee.png
+2023-01-10 18:56:43,071 INFO    Thread-214:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/39rqi9k5-media/images/examples_0_4599aabaff0d1d90536a.png
+2023-01-10 18:56:43,072 INFO    Thread-225:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/18qjnfxn-media/images/examples_0_e8117002a48028e3c80f.png
+2023-01-10 18:56:43,072 INFO    Thread-224:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/aclutabk-media/images/examples_0_9bc69a67eae6fff8dc9f.png
+2023-01-10 18:56:43,079 INFO    Thread-229:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1xg2md5s-media/images/examples_0_8a55183bd7536dac7ff4.png
+2023-01-10 18:56:43,090 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 18:56:43,098 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:43,132 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-10 18:56:43,148 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:43,149 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-10 18:56:43,149 INFO    SenderThread:19085 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-10 18:56:43,156 INFO    Thread-231:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/kzcd7c8r-media/images/examples_0_c150625d572a88f83c2b.png
+2023-01-10 18:56:43,190 INFO    Thread-230:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3m36aif2-media/images/examples_0_147e411574d7e43384e7.png
+2023-01-10 18:56:43,216 INFO    Thread-226:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3j5zx0td-media/images/examples_0_922c58d2d8740dee6b0a.png
+2023-01-10 18:56:43,230 INFO    Thread-228:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/325q4xw3-media/images/examples_0_99ced8f10d15b556c5d8.png
+2023-01-10 18:56:43,233 INFO    Thread-232:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1l5nfcqx-media/images/examples_0_55d1dde91abbe3d4faa8.png
+2023-01-10 18:56:43,649 INFO    Thread-13 :19085 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:56:43,658 INFO    SenderThread:19085 [dir_watcher.py:finish():392] scan: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files
+2023-01-10 18:56:43,659 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-summary.json wandb-summary.json
+2023-01-10 18:56:43,671 INFO    Thread-221:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/3dyncltc-media/images/examples_0_a1bab9b8fc29fe19c066.png
+2023-01-10 18:56:43,682 INFO    Thread-142:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/qijmtbak-media/images/examples_0_3077e85dabf7a00b799e.png
+2023-01-10 18:56:43,685 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-metadata.json wandb-metadata.json
+2023-01-10 18:56:43,687 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/requirements.txt requirements.txt
+2023-01-10 18:56:43,697 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log output.log
+2023-01-10 18:56:43,699 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/conda-environment.yaml conda-environment.yaml
+2023-01-10 18:56:43,753 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/config.yaml config.yaml
+2023-01-10 18:56:43,800 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0fddf1e3a36ce9e6e630.png media/images/examples_0_0fddf1e3a36ce9e6e630.png
+2023-01-10 18:56:43,801 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_8f8666d11dbf9293fe92.png media/images/examples_0_8f8666d11dbf9293fe92.png
+2023-01-10 18:56:43,802 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b82916f53f5a51a1b602.png media/images/examples_0_b82916f53f5a51a1b602.png
+2023-01-10 18:56:43,803 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9b377b16d31f4c614b9b.png media/images/examples_0_9b377b16d31f4c614b9b.png
+2023-01-10 18:56:43,804 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_82b664be25d8e61e0c94.png media/images/examples_0_82b664be25d8e61e0c94.png
+2023-01-10 18:56:43,805 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3d149ffda15fc1aefc7c.png media/images/examples_0_3d149ffda15fc1aefc7c.png
+2023-01-10 18:56:43,805 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3ea9fa3231806e1b852b.png media/images/examples_0_3ea9fa3231806e1b852b.png
+2023-01-10 18:56:43,806 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_99ced8f10d15b556c5d8.png media/images/examples_0_99ced8f10d15b556c5d8.png
+2023-01-10 18:56:43,807 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c150625d572a88f83c2b.png media/images/examples_0_c150625d572a88f83c2b.png
+2023-01-10 18:56:43,808 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_53ca75e06ed579ec20ee.png media/images/examples_0_53ca75e06ed579ec20ee.png
+2023-01-10 18:56:43,808 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e8117002a48028e3c80f.png media/images/examples_0_e8117002a48028e3c80f.png
+2023-01-10 18:56:43,809 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c2c1dc118bb47a4074d6.png media/images/examples_0_c2c1dc118bb47a4074d6.png
+2023-01-10 18:56:43,809 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d3c50c05dec3d1cadb7f.png media/images/examples_0_d3c50c05dec3d1cadb7f.png
+2023-01-10 18:56:43,810 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_751a814fa257b7c8a56f.png media/images/examples_0_751a814fa257b7c8a56f.png
+2023-01-10 18:56:43,810 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a8fa216a8692ea7d4630.png media/images/examples_0_a8fa216a8692ea7d4630.png
+2023-01-10 18:56:43,811 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6985a3d724ad2cd9ebf0.png media/images/examples_0_6985a3d724ad2cd9ebf0.png
+2023-01-10 18:56:43,811 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_1d16c3c08d2d2cc652fb.png media/images/examples_0_1d16c3c08d2d2cc652fb.png
+2023-01-10 18:56:43,811 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_147e411574d7e43384e7.png media/images/examples_0_147e411574d7e43384e7.png
+2023-01-10 18:56:43,811 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_96763e53c4460368cac9.png media/images/examples_0_96763e53c4460368cac9.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e950e8c1c6421aef6652.png media/images/examples_0_e950e8c1c6421aef6652.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6dd91701e052b656d5e2.png media/images/examples_0_6dd91701e052b656d5e2.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_739bf3f22cff8ccac50e.png media/images/examples_0_739bf3f22cff8ccac50e.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_08b8f58c47065d47bbd4.png media/images/examples_0_08b8f58c47065d47bbd4.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e4f23cdcd2dc20fd5a73.png media/images/examples_0_e4f23cdcd2dc20fd5a73.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_297f8b25949c4e6d69c1.png media/images/examples_0_297f8b25949c4e6d69c1.png
+2023-01-10 18:56:43,812 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_80436db3eed760e50671.png media/images/examples_0_80436db3eed760e50671.png
+2023-01-10 18:56:43,813 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_c7ad012a3146a0f6fb1c.png media/images/examples_0_c7ad012a3146a0f6fb1c.png
+2023-01-10 18:56:43,828 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_dbb93159ad16f00297f0.png media/images/examples_0_dbb93159ad16f00297f0.png
+2023-01-10 18:56:43,829 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d33fc2c15833f87d2e8f.png media/images/examples_0_d33fc2c15833f87d2e8f.png
+2023-01-10 18:56:43,829 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_8a55183bd7536dac7ff4.png media/images/examples_0_8a55183bd7536dac7ff4.png
+2023-01-10 18:56:43,829 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_922c58d2d8740dee6b0a.png media/images/examples_0_922c58d2d8740dee6b0a.png
+2023-01-10 18:56:43,829 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_00d41efd69590858a533.png media/images/examples_0_00d41efd69590858a533.png
+2023-01-10 18:56:43,830 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a1f00df692f24104cf38.png media/images/examples_0_a1f00df692f24104cf38.png
+2023-01-10 18:56:43,830 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_75c2a43119997f906fa3.png media/images/examples_0_75c2a43119997f906fa3.png
+2023-01-10 18:56:43,830 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_dec93627194e05070128.png media/images/examples_0_dec93627194e05070128.png
+2023-01-10 18:56:43,831 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_14f5c0ae962bb3288156.png media/images/examples_0_14f5c0ae962bb3288156.png
+2023-01-10 18:56:43,833 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_07dc6e3066058f049fd0.png media/images/examples_0_07dc6e3066058f049fd0.png
+2023-01-10 18:56:43,836 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_fc0e3a7340f44f411ed7.png media/images/examples_0_fc0e3a7340f44f411ed7.png
+2023-01-10 18:56:43,836 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_015b5fc72917adf6282f.png media/images/examples_0_015b5fc72917adf6282f.png
+2023-01-10 18:56:43,842 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ae33d380a3969ceef72b.png media/images/examples_0_ae33d380a3969ceef72b.png
+2023-01-10 18:56:43,843 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b97d02cc6e2f91aa9a00.png media/images/examples_0_b97d02cc6e2f91aa9a00.png
+2023-01-10 18:56:43,843 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_121432d095a5bb12c9ce.png media/images/examples_0_121432d095a5bb12c9ce.png
+2023-01-10 18:56:43,844 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_fce5692dd18d9eb354b1.png media/images/examples_0_fce5692dd18d9eb354b1.png
+2023-01-10 18:56:43,844 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_57a9146a9862b258887f.png media/images/examples_0_57a9146a9862b258887f.png
+2023-01-10 18:56:43,844 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3077e85dabf7a00b799e.png media/images/examples_0_3077e85dabf7a00b799e.png
+2023-01-10 18:56:43,845 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_670b9f2a120815b03eb0.png media/images/examples_0_670b9f2a120815b03eb0.png
+2023-01-10 18:56:43,845 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e38247e0d0bddae77e22.png media/images/examples_0_e38247e0d0bddae77e22.png
+2023-01-10 18:56:43,845 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_03472dce16d106d27f2b.png media/images/examples_0_03472dce16d106d27f2b.png
+2023-01-10 18:56:43,846 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d4358174b3a1b3847b7d.png media/images/examples_0_d4358174b3a1b3847b7d.png
+2023-01-10 18:56:43,846 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6a30a4acdec28c9e09bc.png media/images/examples_0_6a30a4acdec28c9e09bc.png
+2023-01-10 18:56:43,847 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0663c933ba6704d170cf.png media/images/examples_0_0663c933ba6704d170cf.png
+2023-01-10 18:56:43,847 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d3789f3e25f6f65b5d86.png media/images/examples_0_d3789f3e25f6f65b5d86.png
+2023-01-10 18:56:43,847 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_f063ba913912a2df587e.png media/images/examples_0_f063ba913912a2df587e.png
+2023-01-10 18:56:43,848 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ab15cc46dd681f0f3781.png media/images/examples_0_ab15cc46dd681f0f3781.png
+2023-01-10 18:56:43,848 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_169a5805f0b02f31426b.png media/images/examples_0_169a5805f0b02f31426b.png
+2023-01-10 18:56:43,848 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_4a0ecb917c4b4b85f516.png media/images/examples_0_4a0ecb917c4b4b85f516.png
+2023-01-10 18:56:43,848 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_295d9ce218f5f775d784.png media/images/examples_0_295d9ce218f5f775d784.png
+2023-01-10 18:56:43,849 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9bc69a67eae6fff8dc9f.png media/images/examples_0_9bc69a67eae6fff8dc9f.png
+2023-01-10 18:56:43,850 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ff8eb3191d47f13da669.png media/images/examples_0_ff8eb3191d47f13da669.png
+2023-01-10 18:56:43,850 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d281a2aff7fda471eacf.png media/images/examples_0_d281a2aff7fda471eacf.png
+2023-01-10 18:56:43,850 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_85b816b470385054aeef.png media/images/examples_0_85b816b470385054aeef.png
+2023-01-10 18:56:43,851 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_df0f13238a76e8688379.png media/images/examples_0_df0f13238a76e8688379.png
+2023-01-10 18:56:43,851 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9dcec2eaf8910c2b40d0.png media/images/examples_0_9dcec2eaf8910c2b40d0.png
+2023-01-10 18:56:43,851 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_1e4d0566e02c71e9155f.png media/images/examples_0_1e4d0566e02c71e9155f.png
+2023-01-10 18:56:43,852 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ccef3374a84a720e773a.png media/images/examples_0_ccef3374a84a720e773a.png
+2023-01-10 18:56:43,852 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0f933e1467181056b972.png media/images/examples_0_0f933e1467181056b972.png
+2023-01-10 18:56:43,852 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_eb012eae5386d1b00a47.png media/images/examples_0_eb012eae5386d1b00a47.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a3edb678edc86f900b78.png media/images/examples_0_a3edb678edc86f900b78.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_52e8ab36eacd0eee2b1d.png media/images/examples_0_52e8ab36eacd0eee2b1d.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a1bab9b8fc29fe19c066.png media/images/examples_0_a1bab9b8fc29fe19c066.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a6815a1758aba3987e9c.png media/images/examples_0_a6815a1758aba3987e9c.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_288b410d2d0a502e53c8.png media/images/examples_0_288b410d2d0a502e53c8.png
+2023-01-10 18:56:43,853 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ec79fcaceb8fe142fbb3.png media/images/examples_0_ec79fcaceb8fe142fbb3.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_633bbf8060d7b07fa9fb.png media/images/examples_0_633bbf8060d7b07fa9fb.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_2872805e4c9bd2efabff.png media/images/examples_0_2872805e4c9bd2efabff.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_37a34377edbbd7980132.png media/images/examples_0_37a34377edbbd7980132.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_138c1ac915af1983830e.png media/images/examples_0_138c1ac915af1983830e.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_10d11eed86265539ecc5.png media/images/examples_0_10d11eed86265539ecc5.png
+2023-01-10 18:56:43,854 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d31b2d56ab479e168b87.png media/images/examples_0_d31b2d56ab479e168b87.png
+2023-01-10 18:56:43,855 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e37b04b1ef2c498afe58.png media/images/examples_0_e37b04b1ef2c498afe58.png
+2023-01-10 18:56:43,855 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_55d1dde91abbe3d4faa8.png media/images/examples_0_55d1dde91abbe3d4faa8.png
+2023-01-10 18:56:43,856 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_e826f4ae61fba31cef56.png media/images/examples_0_e826f4ae61fba31cef56.png
+2023-01-10 18:56:43,856 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_9b5874748c05b79e3bd3.png media/images/examples_0_9b5874748c05b79e3bd3.png
+2023-01-10 18:56:43,858 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d7d7b6d58ddc6c804e01.png media/images/examples_0_d7d7b6d58ddc6c804e01.png
+2023-01-10 18:56:43,861 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_135750e3ef7b617c1564.png media/images/examples_0_135750e3ef7b617c1564.png
+2023-01-10 18:56:43,861 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d744bd2471c2dba9bf01.png media/images/examples_0_d744bd2471c2dba9bf01.png
+2023-01-10 18:56:43,861 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d679c2b856eebe90407a.png media/images/examples_0_d679c2b856eebe90407a.png
+2023-01-10 18:56:43,862 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_a128c0fd530529fc215d.png media/images/examples_0_a128c0fd530529fc215d.png
+2023-01-10 18:56:43,862 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ac09b4568c6560b46517.png media/images/examples_0_ac09b4568c6560b46517.png
+2023-01-10 18:56:43,862 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_6d4d1f756aff4dbab578.png media/images/examples_0_6d4d1f756aff4dbab578.png
+2023-01-10 18:56:43,862 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0fa6d64a004f4694e986.png media/images/examples_0_0fa6d64a004f4694e986.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_7c5144455967c0d900c7.png media/images/examples_0_7c5144455967c0d900c7.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_62fe3e728b872ca5e282.png media/images/examples_0_62fe3e728b872ca5e282.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_d2228af5229d1e027420.png media/images/examples_0_d2228af5229d1e027420.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_0268c8b30f6b40944f6c.png media/images/examples_0_0268c8b30f6b40944f6c.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_b062b4a9c8835d0450ea.png media/images/examples_0_b062b4a9c8835d0450ea.png
+2023-01-10 18:56:43,863 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_034e7a38d16a04b2feb9.png media/images/examples_0_034e7a38d16a04b2feb9.png
+2023-01-10 18:56:43,864 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_84f7d115f57d4a57d608.png media/images/examples_0_84f7d115f57d4a57d608.png
+2023-01-10 18:56:43,864 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_613455037f5208e59ff6.png media/images/examples_0_613455037f5208e59ff6.png
+2023-01-10 18:56:43,864 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_54d851d07fa36f0a0908.png media/images/examples_0_54d851d07fa36f0a0908.png
+2023-01-10 18:56:43,864 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_cfeca81d3d6bfa9b3237.png media/images/examples_0_cfeca81d3d6bfa9b3237.png
+2023-01-10 18:56:43,865 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_75b2419bf59206cef70c.png media/images/examples_0_75b2419bf59206cef70c.png
+2023-01-10 18:56:43,865 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_2ba990263e19a25c182e.png media/images/examples_0_2ba990263e19a25c182e.png
+2023-01-10 18:56:43,865 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_4599aabaff0d1d90536a.png media/images/examples_0_4599aabaff0d1d90536a.png
+2023-01-10 18:56:43,865 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_51017a501ef75cf08ef5.png media/images/examples_0_51017a501ef75cf08ef5.png
+2023-01-10 18:56:43,865 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3bae00a8d48286ebd4f6.png media/images/examples_0_3bae00a8d48286ebd4f6.png
+2023-01-10 18:56:43,866 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_ac1a1a0792cb0d255739.png media/images/examples_0_ac1a1a0792cb0d255739.png
+2023-01-10 18:56:43,866 INFO    SenderThread:19085 [dir_watcher.py:finish():406] scan save: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/media/images/examples_0_3d77166a87a4a9c735cd.png media/images/examples_0_3d77166a87a4a9c735cd.png
+2023-01-10 18:56:43,866 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 8
+2023-01-10 18:56:43,868 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:43,869 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-10 18:56:43,869 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:43,870 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-10 18:56:43,871 INFO    SenderThread:19085 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-10 18:56:44,901 INFO    Thread-237:19085 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/config.yaml
+2023-01-10 18:56:44,907 INFO    Thread-233:19085 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/wandb-summary.json
+2023-01-10 18:56:44,910 INFO    Thread-235:19085 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/output.log
+2023-01-10 18:56:44,913 INFO    Thread-208:19085 [upload_job.py:push():143] Uploaded file /tmp/tmpjh14jxpqwandb/1g4ym0qc-media/images/examples_0_a3edb678edc86f900b78.png
+2023-01-10 18:56:44,916 INFO    Thread-236:19085 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/conda-environment.yaml
+2023-01-10 18:56:44,919 INFO    Thread-234:19085 [upload_job.py:push():143] Uploaded file /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/files/requirements.txt
+2023-01-10 18:56:45,122 INFO    Thread-12 (_thread_body):19085 [sender.py:transition_state():463] send defer: 9
+2023-01-10 18:56:45,123 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:45,123 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-10 18:56:45,124 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:45,124 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-10 18:56:45,124 INFO    SenderThread:19085 [file_pusher.py:join():173] waiting for file pusher
+2023-01-10 18:56:45,124 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 10
+2023-01-10 18:56:45,125 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:45,125 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-10 18:56:45,126 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:45,126 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-10 18:56:46,120 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 11
+2023-01-10 18:56:46,121 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:46,122 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-10 18:56:46,122 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:46,122 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-10 18:56:46,123 INFO    SenderThread:19085 [sender.py:transition_state():463] send defer: 12
+2023-01-10 18:56:46,125 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 18:56:46,125 INFO    HandlerThread:19085 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-10 18:56:46,125 DEBUG   SenderThread:19085 [sender.py:send():303] send: final
+2023-01-10 18:56:46,126 DEBUG   SenderThread:19085 [sender.py:send():303] send: footer
+2023-01-10 18:56:46,126 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: defer
+2023-01-10 18:56:46,126 INFO    SenderThread:19085 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-10 18:56:46,130 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 18:56:46,130 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 18:56:46,134 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: server_info
+2023-01-10 18:56:46,135 DEBUG   SenderThread:19085 [sender.py:send_request():317] send_request: server_info
+2023-01-10 18:56:46,146 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-10 18:56:46,150 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-10 18:56:46,737 INFO    MainThread:19085 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-10 18:56:46,737 INFO    MainThread:19085 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-10 18:56:46,738 INFO    MainThread:19085 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-10 18:56:46,740 DEBUG   HandlerThread:19085 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-10 18:56:46,740 INFO    HandlerThread:19085 [handler.py:finish():814] shutting down handler
+2023-01-10 18:56:47,126 INFO    WriterThread:19085 [datastore.py:close():279] close: /home/melina/Desktop/MLops/S1_MLops/wandb/run-20230110_185457-17ydru1z/run-17ydru1z.wandb
+2023-01-10 18:56:47,736 INFO    SenderThread:19085 [sender.py:finish():1331] shutting down sender
+2023-01-10 18:56:47,736 INFO    SenderThread:19085 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-10 18:56:47,736 INFO    SenderThread:19085 [file_pusher.py:join():173] waiting for file pusher
+2023-01-10 18:56:47,795 INFO    MainThread:19085 [internal.py:handle_exit():77] Internal process exited

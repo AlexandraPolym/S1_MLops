@@ -4,6 +4,10 @@ from torch.utils.data import Dataset
 import numpy as np
 import os
 
+
+
+
+
 class CorruptMnist(Dataset):
     def __init__(self, train):
         self.download_data(train)
@@ -13,6 +17,8 @@ class CorruptMnist(Dataset):
                 content.append(np.load(f"train_{i}.npz", allow_pickle=True))
             data = torch.tensor(np.concatenate([c['images'] for c in content])).reshape(-1, 1, 28, 28)
             targets = torch.tensor(np.concatenate([c['labels'] for c in content]))
+
+         #   wandb.log({"train_images" : [wandb.Image(im) for im in data]})
         else:
             content = np.load("test.npz", allow_pickle=True)
             data = torch.tensor(content['images']).reshape(-1, 1, 28, 28)

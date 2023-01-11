@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100% [........................................................................] 31400767 / 31400767Epoch 1/5. Loss: 0.1777489334344864
+Epoch 2/5. Loss: 0.043837662786245346
+Epoch 3/5. Loss: 0.06471042335033417
+Epoch 4/5. Loss: 0.021804694086313248
+Epoch 5/5. Loss: 0.028349418193101883
+Evaluating until hitting the ceiling
+Namespace(lr=0.001)
+
+
+
+
+
+
+100% [........................................................................] 31400767 / 31400767
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+WARNING:root:Only 108 Image will be uploaded.
+
+100% [........................................................................] 31400767 / 31400767Test set accuracy 0.9474

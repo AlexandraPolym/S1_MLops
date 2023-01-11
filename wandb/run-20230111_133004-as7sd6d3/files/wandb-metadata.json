@@ -1,0 +1,57 @@
+{
+    "os": "Linux-5.15.0-57-generic-x86_64-with-glibc2.31",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-01-11T12:30:05.810222",
+    "startedAt": "2023-01-11T12:30:04.796414",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/melina/Desktop/MLops/S1_MLops/main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/AlexandraPolym/S1_MLops.git",
+        "commit": "5c5e50779d0bab5cded38a982b5ca5d26993480a"
+    },
+    "email": "s212558@student.dtu.dk",
+    "root": "/home/melina/Desktop/MLops/S1_MLops",
+    "host": "melina-UX310UA",
+    "username": "melina",
+    "executable": "/home/melina/miniconda3/envs/s1_mlops_env/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2619.54275,
+        "min": 400.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2678.171,
+            "min": 400.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2600.0,
+            "min": 400.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2600.0,
+            "min": 400.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2600.0,
+            "min": 400.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "total": 56.58684158325195,
+        "used": 52.685569763183594
+    },
+    "memory": {
+        "total": 7.630748748779297
+    }
+}
