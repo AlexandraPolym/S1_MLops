@@ -12,7 +12,7 @@ class MyAwesomeModel(nn.Module):
             nn.LeakyReLU(),
             nn.Conv2d(16, 8, 3), # [N, 8, 20]
             nn.LeakyReLU()
-        )
+        )    
         
         self.classifier = nn.Sequential(
             nn.Flatten(),
@@ -20,8 +20,8 @@ class MyAwesomeModel(nn.Module):
             nn.Dropout(),
             nn.Linear(128, 10)
         )
-        
-    def forward(self, x):
+
+    def forward(self,x):
         if x.ndim != 4:
             raise ValueError('Expected input to a 4D tensor')
         if x.shape[1] != 1 or x.shape[2] != 28 or x.shape[3] != 28:

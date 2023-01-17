@@ -39,9 +39,9 @@ import os.path
 # test_all_labels_represented(dataset_test)
 # test_data_shape(dataset_train)
 # test_data_shape(dataset_test)
+#######################################################################################
 
-
-
+# @pytest.mark.skipif(not os.path.exists(''), reason="Data files not found")
 
 def test_data():
     dataset_train = CorruptMnist(train=True)
